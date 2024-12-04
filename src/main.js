@@ -22,19 +22,25 @@ async function runCommand() {
   try {
     const output = await invoke("run_command", { command });
     outputElement.textContent = output;
+
+    await invoke("exit_app");
   } catch (err) {
     outputElement.textContent = `Error: ${err}`;
   }
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  greetInputEl = document.querySelector("#greet-input");
+  greetInputEl = document.querySelector("#spotlight-input");
   greetMsgEl = document.querySelector("#greet-msg");
 
   outputElement = document.getElementById("output");
-  document.querySelector("#greet-form").addEventListener("submit", (e) => {
+  document.querySelector("#spotlight-form").addEventListener("submit", (e) => {
     e.preventDefault();
-    //greet();
     runCommand();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      window.close();
+    }
   });
 });

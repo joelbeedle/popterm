@@ -9,32 +9,17 @@
   </head>
 
   <body>
-    <main class="container">
-      <h1>Welcome to Tauri</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
+    <main class="spotlight-container">
+      <form class="spotlight-form" id="spotlight-form">
+        <input
+          id="spotlight-input"
+          placeholder="Enter a command"
+          spellcheck="false"
+          autofocus
+        />
+        <button type="submit" hidden></button>
       </form>
-      <p id="greet-msg"></p>
-      <p id="output"></p>
+      <p id="output" hidden></p>
     </main>
   </body>
 </html>

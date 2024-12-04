@@ -110,3 +110,50 @@ button {
     background-color: #0f0f0f69;
   }
 }
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.spotlight-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.spotlight-form {
+  display: flex;
+  padding: 10px 16px;
+}
+
+#spotlight-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 8px;
+  caret-color: white;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  transition: background 0.3s;
+}
+
+#spotlight-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#spotlight-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}

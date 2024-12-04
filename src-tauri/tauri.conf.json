@@ -8,11 +8,16 @@
   },
   "app": {
     "withGlobalTauri": true,
+    "macOSPrivateApi": true,
     "windows": [
       {
-        "title": "vanilla-cmdpp",
-        "width": 400,
-        "height": 300
+        "label": "vanilla-cmdpp",
+        "transparent": true,
+        "decorations": false,
+        "alwaysOnTop": true,
+        "width": 600,
+        "height": 80,
+        "resizable": false
       }
     ],
     "security": {
