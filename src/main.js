@@ -29,6 +29,10 @@ async function runCommand() {
   }
 }
 
+async function exitApp() {
+  await invoke("exit_app");
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   greetInputEl = document.querySelector("#spotlight-input");
   greetMsgEl = document.querySelector("#greet-msg");
@@ -40,7 +44,8 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      window.close();
+      e.preventDefault();
+      exitApp();
     }
   });
 });
