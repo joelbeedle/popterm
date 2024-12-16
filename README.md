@@ -1,7 +1,11 @@
-# Tauri + Vanilla
+# popterm
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+Popup one-line command terminal app for MacOS, written in Tauri
 
-## Recommended IDE Setup
+## Usage
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+- Clone repository
+- Run `cargo tauri build`
+- Install the generated app
+- Apply binding with a hotkey program of your choice to run the app
+  - Such as [skhd](https://github.com/koekeishiya/skhd)
